@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge">
+    <title>Ralph Lauren web UI/UX</title>
+    <link rel="stylesheet" type="text/css" href="http://designnas.com/source/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://designnas.com/source/css/video_set.css">
+    <link rel="shortcut icon" href="images/Ralph.png">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src='http://designnas.com/source/js/jquery.nicescroll.min.js'></script>
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/jquery.easing.1.3.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="js/plugin/prefixfree.min.js"></script>
+    <script src="js/plugin/respond.min.js"></script>
+    <script src="js/plugin/jquery.nicescroll.min.js"></script>
+    <script src="js/plugin/logic.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</head>
+
+<body>
+<style>
+    body{
+        background-color: #000;
+    }
+    /*scroll bar 배경 색상 변경*/
+    ::-webkit-scrollbar-thumb {background: #486db0;}
+
+    #container{
+        background: url("images/full_ui.png") no-repeat center;
+    }
+
+
+    #container .section {
+        height: 980px;
+        background-color: transparent;
+    }
+
+    #footer {
+      height: 500px;
+      position: relative;
+    }
+    #footer .txt_box{
+        width: 790px;
+        height: 128px;
+        position: absolute;
+        top: 34%;
+        right: 10%;
+        cursor: pointer;
+    }
+    #footer .txt_box .txt1{
+        margin-bottom: 30px;
+    }
+    #footer .txt_box .txt2{
+        position: relative;
+    }
+    #footer .txt_box .txt2:after{
+        content: '';
+        background-image: url(images/next_page/hover_next.png);
+        width: 619px;
+        height: 68px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    #footer .txt_box .arrow{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    #footer .txt_box .arrow:after{
+        content: '';
+        background-image: url(images/next_page/hover_arrow.png);
+        width: 99px;
+        height: 92px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    /*호버*/
+    #footer .txt_box:hover .txt2:after,
+    #footer .txt_box:hover .arrow:after{
+        opacity: 1;
+        transition: all 0.7s;
+    }
+
+    /* 타이틀 구동 */
+    #section01 {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    #section01 .title_box{
+      padding-right: 10vw;
+      position: absolute;
+      bottom: 280px;
+
+    }
+    #section01 .title_box > div:nth-child(1){
+      margin-bottom: 20px;
+    }
+    #section01 .title_box > div{
+      overflow: hidden;
+    }
+    #section01 .title_box > div:nth-child(1) > img{
+      transform: translateY(110%);
+      opacity: 0;
+      transition: all 1.2s;
+      transition-delay: 1.2s;
+    }
+    #section01 .title_box > div:nth-child(2) > img{
+      transform: translateY(110%);
+      opacity: 0;
+      transition: all 1.2s;
+      transition-delay: 1s;
+    }
+    #section01 .title_box > div.on > img{
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+
+
+    .video03 {
+        /*margin-left: -96px;*/
+        margin-top: 50px;
+    }
+    .video07 {
+        margin-left: -154px;
+        margin-top: 112px;
+    }
+    .video10 {
+        margin-left: -193px;
+        margin-top: 38px;
+    }
+
+
+
+    /*video추가시 class="video" 속성은 무조건 포함시킨뒤 class="video(number)"를 넣어주세요.*/
+
+</style>
+
+
+<section class="viewport">
+
+    <div id="scroll-container">
+
+
+        <div id="container">
+
+                <div id="section01" class="section">
+                  <div class="title_box">
+                    <div><img src="images/title1.png" alt=""></div>
+                    <div><img src="images/title2.png" alt=""></div>
+                  </div>
+
+                </div>
+                <div id="section02" class="section"></div>
+                <div id="section03" class="section">
+                    <div class="video video03">
+                        <video width="1260" height="900" autoplay loop muted>
+                            <source src="video/v1.mp4" type="video/mp4">
+                        </video>
+                        <div class="video_cover"><img src="images/device_v1.png" alt=""></div>
+                    </div>
+                </div>
+                <div id="section04" class="section"></div>
+                <div id="section05" class="section"></div>
+                <div id="section06" class="section"></div>
+                <div id="section07" class="section">
+                    <div class="video video07">
+                        <video width="1320" height="900" autoplay loop muted>
+                            <source src="video/v2.mp4" type="video/mp4">
+                        </video>
+                        <div class="video_cover"><img src="images/device_v2.png" alt=""></div>
+                    </div>
+                </div>
+                <div id="section08" class="section"></div>
+                <div id="section09" class="section"></div>
+                <div id="section10" class="section">
+                    <div class="video video10">
+                        <video width="1320" height="900" autoplay loop muted>
+                            <source src="video/v3.mp4" type="video/mp4">
+                        </video>
+                        <div class="video_cover"><img src="images/device_v3.png" alt=""></div>
+                    </div>
+                </div>
+                <div id="section11" class="section"></div>
+                <div id="section12" class="section"></div>
+                <div id="section13" class="section"></div>
+                <div id="section14" class="section"></div>
+                <div id="section15" class="section"></div>
+                <div id="section16" class="section"></div>
+                <div id="section17" class="section"></div>
+                <div id="section18" class="section"></div>
+                <div id="footer">
+                  <div class="txt_box">
+                    <a href="../work02/index.html">
+                      <div class="txt1"><img src="images/next_page/txt_1.png" alt=""></div>
+                      <div class="txt2"><img src="images/next_page/next_2.png" alt=""></div>
+                      <div class="arrow"><img src="images/next_page/arrow_3.png" alt=""></div>
+                    </a>
+                    </div>
+                </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+
+<script src='http://designnas.com/source/js/TweenMax.min.js'></script>
+<script src='http://designnas.com/source/js/smooth_scroll.js'></script>
+
+
+</body>
+</html>
