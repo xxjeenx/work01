@@ -33,7 +33,7 @@ body {
     bottom: 0;
 }
 
-#container .section {
+.section {
     width: 100vw;
     background-size: cover;
     position: relative;
