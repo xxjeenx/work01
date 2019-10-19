@@ -19,7 +19,9 @@ html, body {
 body {
     overflow-x: hidden;
     overflow-y: scroll;
+    background-color: #000;
 }
+
 
 
 .viewport {
@@ -50,4 +52,93 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+}
+
+
+/*scroll bar 배경 색상 변경*/
+::-webkit-scrollbar-thumb {background: #486db0;}
+
+#container01{background: url("../images/s1.jpg") no-repeat center;}
+#container02{background: url("../images/s2.jpg") no-repeat center;}
+#container03{background: url("../images/s3.jpg") no-repeat center;}
+#container04{background: url("../images/s4.jpg") no-repeat center;}
+#container05{background: url("../images/s5.jpg") no-repeat center;}
+#container06{background: url("../images/s6.jpg") no-repeat center;}
+#container07{background: url("../images/s7.jpg") no-repeat center;}
+
+
+.section {
+    height: 980px;
+    background-color: transparent;
+}
+
+#footer {
+    height: 500px;
+    position: relative;
+}
+#footer .txt_box{
+    width: 790px;
+    height: 128px;
+    position: absolute;
+    top: 34%;
+    right: 10%;
+    cursor: pointer;
+}
+#footer .txt_box .txt1{
+    margin-bottom: 30px;
+}
+#footer .txt_box .txt2{
+    position: relative;
+}
+#footer .txt_box .txt2:after{
+    content: '';
+    background-image: url(../images/next_page/hover_next.png);
+    width: 619px;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#footer .txt_box .arrow{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#footer .txt_box .arrow:after{
+    content: '';
+    background-image: url(../images/next_page/hover_arrow.png);
+    width: 99px;
+    height: 92px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+/*호버*/
+#footer .txt_box:hover .txt2:after,
+#footer .txt_box:hover .arrow:after{
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+.video03 {
+    /*margin-left: -96px;*/
+    margin-top: 50px;
+}
+.video07 {
+    margin-left: -154px;
+    margin-top: 112px;
+}
+.video10 {
+    margin-left: -193px;
+    margin-top: 74px;
+}
+
+#section07 .video_cover{
+    padding-bottom: 2px;
+}
+#section10 .video_cover{
+    padding-right: 2px;
 }

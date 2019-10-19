@@ -6,147 +6,12 @@
     <title>Ralph Lauren web UI/UX</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/video_set.css">
-    <link rel="shortcut icon" href="images/Ralph.png">
+    <link rel="shortcut icon" href="images/ralph.png">
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
 </head>
 
 <body>
-<style>
-    body{
-        background-color: #000;
-    }
-    /*scroll bar 배경 색상 변경*/
-    ::-webkit-scrollbar-thumb {background: #486db0;}
-
-    #container01{background: url("images/s1.jpg") no-repeat center;}
-    #container02{background: url("images/s2.jpg") no-repeat center;}
-    #container03{background: url("images/s3.jpg") no-repeat center;}
-    #container04{background: url("images/s4.jpg") no-repeat center;}
-    #container05{background: url("images/s5.jpg") no-repeat center;}
-    #container06{background: url("images/s6.jpg") no-repeat center;}
-    #container07{background: url("images/s7.jpg") no-repeat center;}
-
-
-    .section {
-        height: 980px;
-        background-color: transparent;
-    }
-
-    #footer {
-      height: 500px;
-      position: relative;
-    }
-    #footer .txt_box{
-        width: 790px;
-        height: 128px;
-        position: absolute;
-        top: 34%;
-        right: 10%;
-        cursor: pointer;
-    }
-    #footer .txt_box .txt1{
-        margin-bottom: 30px;
-    }
-    #footer .txt_box .txt2{
-        position: relative;
-    }
-    #footer .txt_box .txt2:after{
-        content: '';
-        background-image: url(images/next_page/hover_next.png);
-        width: 619px;
-        height: 68px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-    }
-
-    #footer .txt_box .arrow{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-    #footer .txt_box .arrow:after{
-        content: '';
-        background-image: url(images/next_page/hover_arrow.png);
-        width: 99px;
-        height: 92px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-    }
-    /*호버*/
-    #footer .txt_box:hover .txt2:after,
-    #footer .txt_box:hover .arrow:after{
-        opacity: 1;
-        transition: all 0.7s;
-    }
-
-    /* 타이틀 구동 */
-    #section01 {
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
-    #section01 .title_box{
-      padding-right: 10vw;
-      position: absolute;
-      bottom: 280px;
-
-    }
-    #section01 .title_box > div:nth-child(1){
-      margin-bottom: 20px;
-    }
-    #section01 .title_box > div{
-      overflow: hidden;
-    }
-    #section01 .title_box > div:nth-child(1) > img{
-      transform: translateY(110%);
-      opacity: 0;
-      transition: all 1.2s;
-      transition-delay: 1.2s;
-    }
-    #section01 .title_box > div:nth-child(2) > img{
-      transform: translateY(110%);
-      opacity: 0;
-      transition: all 1.2s;
-      transition-delay: 1s;
-    }
-    #section01 .title_box > div.on > img{
-      transform: translateY(0);
-      opacity: 1;
-    }
-
-
-
-    .video03 {
-        /*margin-left: -96px;*/
-        margin-top: 50px;
-    }
-    .video07 {
-        margin-left: -154px;
-        margin-top: 112px;
-    }
-    .video10 {
-        margin-left: -193px;
-        margin-top: 74px;
-    }
-
-    #section07 .video_cover{
-      padding-bottom: 2px;
-    }
-    #section10 .video_cover{
-      padding-right: 2px;
-    }
-
-
-
-    /*video추가시 class="video" 속성은 무조건 포함시킨뒤 class="video(number)"를 넣어주세요.*/
-
-</style>
-
 
 <section class="viewport">
 
@@ -154,12 +19,7 @@
 
 
         <div id="container01">
-                <div id="section01" class="section">
-                  <div class="title_box">
-                    <div><img src="images/title1.png" alt=""></div>
-                    <div><img src="images/title2.png" alt=""></div>
-                  </div>
-                </div>
+                <div id="section01" class="section"></div>
                 <div id="section02" class="section"></div>
         </div>
         <div id="container02">
